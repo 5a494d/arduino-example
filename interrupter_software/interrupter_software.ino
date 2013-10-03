@@ -6,7 +6,8 @@ void setup(){
   pinMode(led9,OUTPUT);
   pinMode(led10, OUTPUT);
   
-  attachInterrupt(0, isr, CHANGE);
+  attachInterrupt(0, isr, RISING);
+  // rising
 }
 void loop(){
   digitalWrite(led9, !digitalRead(led9));
